@@ -1,0 +1,44 @@
+{
+  "name": "samoyed-react-native",
+  "version": "1.0.0",
+  "description": "react-native组件库，基于ant-design二次封装",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zqyts/samoyed-react-native.git"
+  },
+  "keywords": [
+    "react-native",
+    "ant-design",
+    "react-hook-form",
+    "typescript",
+    "utils",
+    "component",
+    "ui"
+  ],
+  "author": "zqyts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zqyts/samoyed-react-native/issues"
+  },
+  "homepage": "https://github.com/zqyts/samoyed-react-native#readme",
+  "dependencies": {
+    "@ant-design/react-native": "^5.0.4",
+    "@react-native-async-storage/async-storage": "^1.18.1",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-hook-form": "^7.43.8",
+    "react-native": "^0.71.5",
+    "react-native-svg": "^13.8.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.192",
+    "@types/react": "^18.0.31",
+    "@types/react-native": "^0.71.5",
+    "jest": "^29.5.0",
+    "typescript": "^5.0.2"
+  }
+}

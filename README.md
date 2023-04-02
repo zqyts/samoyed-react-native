@@ -3,11 +3,11 @@ react-native组件库，基于ant-design二次封装
 ## Install & Usage
 
 ```bash
-$ npm install @ant-design/react-native --save
+$ npm install samoyed-react-native --save
 ```
 
 or
 
 ```bash
-yarn add @ant-design/react-native
+yarn add samoyed-react-native
 ```
