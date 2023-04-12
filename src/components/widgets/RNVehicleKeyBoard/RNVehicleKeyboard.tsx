@@ -1,5 +1,5 @@
-import RNKeyBord from "./RNKeyBord";
-import React, { useEffect, useState } from "react";
+import KeyBoardCell from "./keyBoardCell";
+import { memo, useEffect, useState } from "react";
 import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 import { autoHeight, autoWidth, scaleSize } from "../../../utils/screenUtil";
 
@@ -180,7 +180,7 @@ const RNVehicle = (props: IRNPropsInterface) => {
             <Text style={styles.keyFinishRight}>完成</Text>
           </TouchableOpacity>
         </View>
-        <RNKeyBord
+        <KeyBoardCell
           titles={vehicleProvince}
           onSelected={onSelected}
           onDeleted={onDeleted}
@@ -191,7 +191,7 @@ const RNVehicle = (props: IRNPropsInterface) => {
   return <View style={styles.keyBord}>{_renderKeyBord()}</View>;
 };
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   keyFinishLeft: {
     fontSize: scaleSize(30),
     textAlignVertical: "center",
@@ -228,4 +228,4 @@ export const styles = StyleSheet.create({
   },
 });
 
-export default React.memo(RNVehicle);
+export default memo(RNVehicle);

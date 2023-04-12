@@ -3,13 +3,13 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import { isEmpty } from "lodash";
 import { autoHeight, autoWidth, scaleSize } from "../../../utils/screenUtil";
 
-interface IRNPropsInterface {
+interface IKeyBoardCellProps {
   titles: string[];
   onSelected: (index: Key | null | undefined) => void;
   onDeleted: () => void;
 }
 
-const RNKeyBord = (props: IRNPropsInterface) => {
+const KeyBoardCell = (props: IKeyBoardCellProps) => {
   const { titles, onSelected, onDeleted } = props;
 
   const _renderCell = (index: any) => {
@@ -75,7 +75,7 @@ const RNKeyBord = (props: IRNPropsInterface) => {
   );
 };
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     paddingLeft: autoWidth(10),
     paddingRight: autoWidth(20),
@@ -102,4 +102,4 @@ export const styles = StyleSheet.create({
   },
 });
 
-export default memo(RNKeyBord);
+export default memo(KeyBoardCell);

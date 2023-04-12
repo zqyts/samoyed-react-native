@@ -49,7 +49,7 @@ const RNVehicleInput = (props: RNVehicleInputPropsInterface) => {
   );
 };
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     height: Themes.list_item_height + Themes.border_width_sm,
     borderBottomWidth: StyleSheet.hairlineWidth,
