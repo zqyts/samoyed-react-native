@@ -1,6 +1,6 @@
 {
   "name": "samoyed-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-native组件库，基于ant-design二次封装",
   "main": "index.js",
   "scripts": {
